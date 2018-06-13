@@ -27,7 +27,9 @@ export DEVICE_BRINGUP_YEAR=2017
 # Hax for cam configs
 
 CAMERA2_SENSOR_MODULES="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
+LIBMORPHOHHT_4="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmorphohht4.0.so
 
 sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$CAMERA2_SENSOR_MODULES"
+sed -i "s|/system/etc/|/vendor/etc/|g" "$LIBMORPHOHHT_4"
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
