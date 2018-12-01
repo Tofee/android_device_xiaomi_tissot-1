@@ -37,9 +37,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
-# Root Folders
-BOARD_ROOT_EXTRA_FOLDERS := dsp firmware persist
-
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2018-10-05
 
