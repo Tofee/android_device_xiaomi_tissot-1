@@ -38,7 +38,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2018-10-05
+VENDOR_SECURITY_PATCH := 2018-11-05
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
