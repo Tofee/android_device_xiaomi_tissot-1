@@ -28,8 +28,10 @@ export DEVICE_BRINGUP_YEAR=2017
 
 CAMERA2_SENSOR_MODULES="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
 LIBMORPHOHHT_4="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmorphohht4.0.so
+LIBMICAMHAL="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/lib/libMiCameraHal.so
 
 sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$CAMERA2_SENSOR_MODULES"
 sed -i "s|/system/etc/|/vendor/etc/|g" "$LIBMORPHOHHT_4"
+sed -i "s|/system/etc/|/vendor/etc/|g" "$LIBMICAMHAL"
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
